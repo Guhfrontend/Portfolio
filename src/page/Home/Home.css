@@ -1,21 +1,23 @@
 .home {
   background-color: #1f1f33;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .home-content {
   max-width: 800px;
   text-align: center;
+  width: 100%;
 }
 
 .home h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .home .highlight {
@@ -23,15 +25,16 @@
 }
 
 .home h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   color: #cfcfcf;
   margin-bottom: 20px;
 }
 
 .home p {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   color: #b3b3b3;
   margin-bottom: 40px;
+  line-height: 1.6;
 }
 
 .buttons {
@@ -77,34 +80,65 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  gap: clamp(20px, 5vw, 50px);
+  flex-wrap: nowrap;
+  padding: 10px;
 }
 
 .containerContato a {
-  font-size: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  font-size: clamp(30px, 8vw, 50px);
   text-decoration: none;
   color: #00ffc8;
-  transition: all ease 1s;
+  flex-shrink: 0; 
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 0px transparent);
 }
-.containerContato .gmail:hover {
-  filter: drop-shadow(0 0 10px #e32b2b);
-  transform: rotate(30deg);
+
+.containerContato a:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px #00ffc8); 
 }
-.containerContato .instagram:hover {
-  filter: drop-shadow(0 0 10px #e32be3);
-  transform: rotate(30deg);
+
+
+.containerContato a:not(:hover) {
+  filter: drop-shadow(0 0 0px transparent);
 }
-.containerContato .whatsapp:hover {
-  filter: drop-shadow(0 0 20px #00ff00);
-  transform: rotate(30deg);
+
+@media (max-width: 768px) {
+  .home {
+    padding: 10px;
+  }
+  
+  .home-content {
+    padding: 0 10px;
+  }
+  
+  .containerContato {
+    gap: clamp(15px, 4vw, 30px);
+    justify-content: space-around;
+  }
+  
+  .containerContato a {
+    font-size: clamp(25px, 7vw, 40px);
+  }
 }
-.containerContato .linkedin:hover {
-  filter: drop-shadow(0 0 20px #0000ff);
-  transform: rotate(30deg);
+
+@media (max-width: 480px) {
+  .containerContato {
+    gap: clamp(10px, 3vw, 20px);
+  }
+  
+  .containerContato a {
+    font-size: 40px;
+  }
 }
-.containerContato .github:hover {
-  filter: drop-shadow(0 0 20px #000000);
-  transform: rotate(30deg);
+
+@media (max-width: 360px) {
+  .containerContato {
+    gap: clamp(8px, 2vw, 15px);
+  }
+  
+  .containerContato a {
+    font-size: clamp(20px, 5vw, 30px);
+  }
 }
