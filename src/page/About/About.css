@@ -1,0 +1,35 @@
+.about-container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+.about-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #00ffd1;
+  margin-bottom: 24px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .about-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.box-work {
+  margin: auto;
+  margin-top: 30px;
+  height: auto;
+  max-width: 1000px;
+  background-color: #1f1f33;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.work-title {
+  color: #00ffd1;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .box-work {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .work-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+    
+}

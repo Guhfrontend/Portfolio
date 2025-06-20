@@ -1,0 +1,43 @@
+.header {
+  color: white;
+  padding: 4;
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+}
+
+.navbar {
+  padding: 2;
+  font-weight: bold;
+
+  .lista-links {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    gap: 20px;
+    color: white;
+  }
+}
+.link {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 20px;
+    transition: all ease 0.5s;
+}
+.link::after {
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: #6883BA;
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+.link:hover::after {
+    width: 100%;
+    box-shadow: 2px 2px 10px #6883BA;
+}

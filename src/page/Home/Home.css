@@ -1,0 +1,110 @@
+.home {
+  background-color: #1f1f33;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.home-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home .highlight {
+  color: #00ffc8;
+}
+
+.home h2 {
+  font-size: 2rem;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: #b3b3b3;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 5px;
+}
+
+.btn {
+  background-color: #00ffc8;
+  color: #1f1f33;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #00ffc8;
+  color: #00ffc8;
+}
+
+.btn-outline:hover {
+  background-color: #00ffc8;
+  color: #1f1f33;
+}
+
+.contato-link {
+  margin: 20px;
+  color: #00ffc8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.containerContato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerContato a {
+  font-size: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-decoration: none;
+  color: #00ffc8;
+  transition: all ease 1s;
+}
+.containerContato .gmail:hover {
+  filter: drop-shadow(0 0 10px #e32b2b);
+  transform: rotate(30deg);
+}
+.containerContato .instagram:hover {
+  filter: drop-shadow(0 0 10px #e32be3);
+  transform: rotate(30deg);
+}
+.containerContato .whatsapp:hover {
+  filter: drop-shadow(0 0 20px #00ff00);
+  transform: rotate(30deg);
+}
+.containerContato .linkedin:hover {
+  filter: drop-shadow(0 0 20px #0000ff);
+  transform: rotate(30deg);
+}
+.containerContato .github:hover {
+  filter: drop-shadow(0 0 20px #000000);
+  transform: rotate(30deg);
+}

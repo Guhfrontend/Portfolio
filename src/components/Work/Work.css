@@ -1,0 +1,52 @@
+.titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.work-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #1F1F33;
+  border-radius: 12px;
+}
+
+.work-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.work-container li {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.work-container strong {
+  color: #00ffd1;
+}
+
+.work-container p {
+  margin-top: 4px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .work-container {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .work-container li {
+    margin-bottom: 10px;
+  }
+
+  .work-container p {
+    font-size: 0.9rem;
+  }
+    
+}
